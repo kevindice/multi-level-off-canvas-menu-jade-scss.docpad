@@ -20,4 +20,4 @@ Built with Jade and SCSS
 
 ## License
 
-This skeleton is provided under the ["MIT Licence"](http://en.wikipedia.org/wiki/MIT_License).  The original html, css, and js for the menu was published in a Codrops ["article"](http://tympanus.net/codrops/2013/08/13/multi-level-push-menu/) and code ["demo"](http://tympanus.net/Development/MultiLevelPushMenu/).  It is also available in a GitHub ["repo"](https://github.com/codrops/MultiLevelPushMenu).
+This skeleton is provided under the ["MIT Licence"](http://en.wikipedia.org/wiki/MIT_License).  The original html, css, and js for the menu was published in a Codrops [article](http://tympanus.net/codrops/2013/08/13/multi-level-push-menu/) and code [demo](http://tympanus.net/Development/MultiLevelPushMenu/).  It is also available in a GitHub [repo](https://github.com/codrops/MultiLevelPushMenu).
