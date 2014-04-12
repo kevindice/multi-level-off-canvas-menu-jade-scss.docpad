@@ -3,6 +3,7 @@
 ---
 
 - var styles = getBlock('styles').add(site.styles).add(document.styles).toHTML()
+- var scripts = getBlock('scripts').add(site.scripts).add(document.scripts).toHTML()
 - var pageTitle = getPreparedTitle()
 - var pageDescription = getPreparedDescription()
 - var pageKeywords = getPreparedKeywords()
@@ -40,62 +41,43 @@ head
                         h2 Mobile Phones
                         a.mp-back(href="#") back
                         ul
-                          li
-                            a(href="#") Super Smart Phone
-                          li
-                            a(href="#") Thin Magic Mobile
-                          li
-                            a(href="#") Performance Crusher
-                          li
-                            a(href="#") Futuristic Experience
+                          li: a(href="#") Super Smart Phone
+                          li: a(href="#") Thin Magic Mobile
+                          li: a(href="#") Performance Crusher
+                          li: a(href="#") Futuristic Experience
                     li.icon.icon-arrow-left
                       a.icon.icon-tv(href="#") Televisions
                       .mp-level
                         h2 Televisions
                         a.mp-back(href="#") back
                         ul
-                          li
-                            a(href="#") Flat Superscreen
-                          li
-                            a(href="#") Gigantic LED
-                          li
-                            a(href="#") Power Eater
-                          li
-                            a(href="#") 3D Experience
-                          li
-                            a(href="#") Classic Comfort
+                          li: a(href="#") Flat Superscreen
+                          li: a(href="#") Gigantic LED
+                          li: a(href="#") Power Eater
+                          li: a(href="#") 3D Experience
+                          li: a(href="#") Classic Comfort
                     li.icon.icon-arrow-left
                       a.icon.icon-camera(href="#") Cameras
                       .mp-level
                         h2 Cameras
                         a.mp-back(href="#") back
                         ul
-                          li
-                            a(href="#") Smart Shot
-                          li
-                            a(href="#") Power Shooter
-                          li
-                            a(href="#") Easy Photo Maker
-                          li
-                            a(href="#") Super Pixel
+                          li: a(href="#") Smart Shot
+                          li: a(href="#") Power Shooter
+                          li: a(href="#") Easy Photo Maker
+                          li: a(href="#") Super Pixel
               li.icon.icon-arrow-left
                 a.icon.icon-news(href="#") Magazines
                 .mp-level
                   h2.icon.icon-news Magazines
                   a.mp-back(href="#") back
                   ul
-                    li
-                      a(href="#") National Geographic
-                    li
-                      a(href="#") Scientific American
-                    li
-                      a(href="#") The Spectator
-                    li
-                      a(href="#") The Rambler
-                    li
-                      a(href="#") Physics World
-                    li
-                      a(href="#") The New Scientist
+                    li: a(href="#") National Geographic
+                    li: a(href="#") Scientific American
+                    li: a(href="#") The Spectator
+                    li: a(href="#") The Rambler
+                    li: a(href="#") Physics World
+                    li: a(href="#") The New Scientist
               li.icon.icon-arrow-left
                 a.icon.icon-shop(href="#") Store
                 .mp-level
@@ -114,44 +96,30 @@ head
                               h2.icon.icon-female Women's Clothing
                               a.mp-back(href="#") back
                               ul
-                                li
-                                  a(href="#") Tops
-                                li
-                                  a(href="#") Dresses
-                                li
-                                  a(href="#") Trousers
-                                li
-                                  a(href="#") Shoes
-                                li
-                                  a(href="#") Sale
+                                li: a(href="#") Tops
+                                li: a(href="#") Dresses
+                                li: a(href="#") Trousers
+                                li: a(href="#") Shoes
+                                li: a(href="#") Sale
                           li.icon.icon-arrow-left
                             a.icon.icon-male(href="#") Men's Clothing
                             .mp-level
                               h2.icon.icon-male Men's Clothing
                               a.mp-back(href="#") back
                               ul
-                                li
-                                  a(href="#") Shirts
-                                li
-                                  a(href="#") Trousers
-                                li
-                                  a(href="#") Shoes
-                                li
-                                  a(href="#") Sale
-                    li
-                      a.icon.icon-diamond(href="#") Jewelry
-                    li
-                      a.icon.icon-music(href="#") Music
-                    li
-                      a.icon.icon-food(href="#") Grocery
-              li
-                a.icon.icon-photo(href="#") Collections
-              li
-                a.icon.icon-wallet(href="#") Credits
+                                li: a(href="#") Shirts
+                                li: a(href="#") Trousers
+                                li: a(href="#") Shoes
+                                li: a(href="#") Sale
+                    li: a.icon.icon-diamond(href="#") Jewelry
+                    li: a.icon.icon-music(href="#") Music
+                    li: a.icon.icon-food(href="#") Grocery
+              li: a.icon.icon-photo(href="#") Collections
+              li: a.icon.icon-wallet(href="#") Credits
 
         .scroller
           .scroller-inner
-            .codrops-top.clearfix
+            //- .codrops-top.clearfix
               a.codrops-icon.codrops-icon-prev(href="http://tympanus.net/Tutorials/CircularNavigation/")
                 span Previous Demo
               span.right
@@ -182,8 +150,4 @@ head
                   a(href="http://goo.gl/JLJ4v5") Responsive Multi-Level Menu
                 p
                   a(href="http://goo.gl/qjbq9Y") Google Nexus Website Menu
-
-    script(src="classie.js")
-    script(src="mlpushmenu.js")
-    script.
-      new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+    != scripts
