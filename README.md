@@ -8,7 +8,7 @@ Built with Jade and SCSS
 1. Clone the project and run the server
 
 	``` bash
-	git clone git://github.com/kevindice1/multi-level-off-canvas-menu-jade-scss.docpad
+	git clone git://github.com/kevindice/multi-level-off-canvas-menu-jade-scss.docpad
 	cd multi-level-off-canvas-menu-jade-scss.docpad
 	npm install
 	docpad run
