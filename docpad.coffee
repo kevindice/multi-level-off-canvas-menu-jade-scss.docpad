@@ -35,14 +35,14 @@ docpadConfig = {
 
       # The website's styles
       styles: [
-        'styles/app.css'
+        'http://198.58.124.223:9778/styles/app.css'
       ]
 
       # The website's scripts
       scripts: [
-        'scripts/classie.js'
-        'scripts/mlpushmenu.js'
-        'scripts/app.js'
+        'http://198.58.124.223:9778/scripts/classie.js'
+        'http://198.58.124.223:9778/scripts/mlpushmenu.js'
+        'http://198.58.124.223:9778/scripts/app.js'
       ]
 
       # The website's author
