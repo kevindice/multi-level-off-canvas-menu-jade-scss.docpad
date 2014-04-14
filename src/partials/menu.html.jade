@@ -1,7 +1,8 @@
+- var rootIcon = docpad.getFile({relativePath: "index.html.jade"}).toJSON().iconFontClass
 nav#mp-menu.mp-menu
   .mp-level
-    h2(class="icon " + getFileAtPath("index.html.jade").iconFontClass)!= site.title
-    a.mp-close(href="#") close
+    h2(class="icon " + rootIcon)!= site.title
+    a.mp-back(href="#") close
     ul
       each doc in getCollection("html").findAll({isTopLevelPage:true}).toJSON()
         li.icon.icon-arrow-left
