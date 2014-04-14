@@ -2,7 +2,7 @@
   "name": "multi-level-off-canvas-menu-jade-scss.docpad",
   "version": "0.1.0",
   "description": "Multi-Level Off-Canvas Menu Skeleton for Docpad built with Jade and SCSS.",
-  "homepage": "https://github.com/kevindice1/multi-level-off-canvas-menu-jade-scss.docpad",
+  "homepage": "https://github.com/kevindice/multi-level-off-canvas-menu-jade-scss.docpad",
   "keywords": [
     "docpad-skeleton",
     "docpad",
@@ -19,11 +19,11 @@
     "Kevin Dice <kevin.dice1@gmail.com>"
   ],
   "bugs": {
-    "url": "https//github.com/kevindice1/multi-level-off-canvas-menu-jade-scss.docpad/issues"
+    "url": "https//github.com/kevindice/multi-level-off-canvas-menu-jade-scss.docpad/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kevindice1/multi-level-off-canvas-menu-jade-scss.docpad.git"
+    "url": "https://github.com/kevindice/multi-level-off-canvas-menu-jade-scss.docpad.git"
   },
   "engines": {
     "node": "0.10",
