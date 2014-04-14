@@ -24,7 +24,9 @@ docpadConfig = {
       title: "Your Website"
 
       # The website description (for SEO)
-      description: "This is the description for your website, and it will appear in the Google search results under your site title."
+      description: """
+        This is the description for your website, and it will appear in the Google search results under your site title.
+      """
 
       # The website keywords (for SEO) separated by commas
       keywords: """
