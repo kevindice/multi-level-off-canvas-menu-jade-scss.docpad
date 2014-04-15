@@ -2,22 +2,22 @@
 - var rootUrl = docpad.getFile({relativePath: "index.html.jade"}).toJSON().url
 nav#mp-menu.mp-menu
   .mp-level
-    a(href!= rootUrl): h2(class="icon " + rootIcon)!= site.title
+    a(href!= rootUrl): h2(class="fi-" + rootIcon)!= site.title
     a.mp-back(href="#") close
     ul
       each doc in getCollection("html").findAll({isTopLevelPage:true}).toJSON()
-        li.icon.icon-arrow-left
-          a(href!= doc.url, class="icon " + doc.iconFontClass)!= doc.title
+        li.fi-arrow-left
+          a(href!= doc.url, class="fi-" + doc.iconFontClass)!= doc.title
           .mp-level
-            a(href!= doc.url): h2(class="icon " + doc.iconFontClass)!= doc.title
+            a(href!= doc.url): h2(class="fi-" + doc.iconFontClass)!= doc.title
             a.mp-back(href="#") back
             ul
               each childDoc in getFilesAtPath(doc.locationOfChildren).toJSON()
-                li.icon.icon-arrow-left
-                  a(class="icon " + childDoc.iconFontClass)!= childDoc.title
+                li.fi-arrow-left
+                  a(class="fi-" + childDoc.iconFontClass)!= childDoc.title
                   .mp-level
-                    a(href!= childDoc): h2(class="icon " + childDoc.iconFontClass)!= childDoc.title
+                    a(href!= childDoc): h2(class="fi-" + childDoc.iconFontClass)!= childDoc.title
                     a.mp-back(href="#") back
                     ul
                       each grandChildDoc in getFilesAtPath(childDoc.locationOfChildren).toJSON()
-                        li: a(class="icon " + grandChildDoc.iconFontClass, href!= grandChildDoc.url)!= grandChildDoc.title
+                        li: a(class="fi-" + grandChildDoc.iconFontClass, href!= grandChildDoc.url)!= grandChildDoc.title

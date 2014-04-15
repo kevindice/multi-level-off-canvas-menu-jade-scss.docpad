@@ -267,9 +267,9 @@ html, body, .container, .scroller {
 }
 
 .mp-back::after {
-	font-family: 'linecons';
+	font-family: 'foundation-icons';
 	position: absolute;
-	content: "\e037";
+	content: "\f10b";
 	right: 10px;
 	font-size: 1.3em;
 	color: rgba(0,0,0,0.3);
